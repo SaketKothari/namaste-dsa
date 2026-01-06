@@ -1,4 +1,4 @@
-# Remove Duplicates
+# Notes
 
 ### Integer Array
 

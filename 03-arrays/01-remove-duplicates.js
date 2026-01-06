@@ -17,5 +17,5 @@ const result = removeDuplicates(nums);
 console.log("Output:", result);
 console.log("Modified Array:", nums.slice(0, result));
 
-// Time Complexity: O(n)
-// Space Complexity: O(1)
+// Time Complexity: O(n)  - n is nums.length
+// Space Complexity: O(1) - Constant Extra Space
