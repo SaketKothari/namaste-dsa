@@ -31,7 +31,7 @@ Imagine asking "Who is the last person in the queue?"
 
 ```
 You → Person1 → Person2 → Person3 → "I'm last!"
-                                        ↓
+                                       ↓
 You ← Person1 ← Person2 ← Person3 ← "Person3 is last"
 ```
 
@@ -43,9 +43,9 @@ Each person asks the next one (recursive call), until someone says "I'm last!" (
 
 ```
 Comment: "Great video!"
-  └── Reply: "Thanks!"
-        └── Reply: "You're welcome!"
-              └── Reply: "😊"
+ └── Reply: "Thanks!"
+       └── Reply: "You're welcome!"
+             └── Reply: "😊"
 ```
 
 Each reply can have its own replies - a recursive structure!
@@ -55,11 +55,11 @@ Each reply can have its own replies - a recursive structure!
 ### 3. Organisational Hierarchies
 
 ```
-          CEO
-         /   \
-      CTO     CFO
-     /   \      \
-  Dev1  Dev2   Accountant
+         CEO
+        /   \
+     CTO     CFO
+    /   \      \
+ Dev1  Dev2   Accountant
 ```
 
 To count all employees, you recursively count employees under each manager.
@@ -98,6 +98,16 @@ printNTo1(3)
 3. **Too deep recursion** - Large inputs exceed stack limit
 4. **Keeping in mind the Time Complexity** - Recursive solutions can be slow (e.g., naive Fibonacci is O(2^n))
 
-## 
+## Problems
+
+| #   | Problem                                                | Description                                    | Time | Space |
+| --- | ------------------------------------------------------ | ---------------------------------------------- | ---- | ----- |
+| 01  | [Print N to 1](./01-print-n-to-1.js)                   | Print numbers from N down to 1                 | O(n) | O(n)  |
+| 02  | [Print 1 to N](./02-print-1-to-n.js)                   | Print numbers from 1 up to N                   | O(n) | O(n)  |
+| 03  | [Sum of N Numbers](./03-sum-of-n-numbers.js)           | Calculate sum of first N natural numbers       | O(n) | O(n)  |
+| 04  | [Sum of Array Elements](./04-sum-of-array-elements.js) | Calculate sum of all elements in an array      | O(n) | O(n)  |
+| 05  | [Sum of Odd Elements](./05-sum-odd-elements.js)        | Calculate sum of only odd elements in an array | O(n) | O(n)  |
+
+##
 
 > _"To understand recursion, you must first understand recursion."_ 🔁
